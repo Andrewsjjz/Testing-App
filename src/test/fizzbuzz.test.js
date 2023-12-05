@@ -5,18 +5,12 @@ describe("Fizzbuzz", () => {
   it("debe ser un fuction", () => {
     expect(typeof Fizzbuzz).toBe("function");
   })
-
-
   it("debe devolver un numero", () => {
     expect(() => Fizzbuzz()).toThrow();
   })
-
-
   it("debe devolver un mensaje de error si no es un numero", () => {
     expect(() => Fizzbuzz()).toThrow("No es un numero lo que es ingresando");
   })
-
-
   it("debe devolver un 1", () => {
     expect(Fizzbuzz(1)).toBe(1);
   })
@@ -54,5 +48,5 @@ describe("Fizzbuzz", () => {
     expect(Fizzbuzz(15)).toBe("FIZZBUZZ");
   })
 
-  
+
 })
